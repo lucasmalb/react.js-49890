@@ -1,0 +1,25 @@
+Nav{
+    
+    background-color: rgba(255, 73, 7, 0.587);
+    height: 40px;
+}
+.NavBar{
+    display: flex;
+    justify-content: space-between;
+    padding-block:7px ;
+}
+.NavBar h1{
+    font-weight: 600;
+    font-size: 20px;
+    padding-inline: 10px;
+}
+
+.NavBar input{
+    width: 350px;
+    height: 27px;
+    border-radius: 20px;
+    
+
+   
+
+}

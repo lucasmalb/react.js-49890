@@ -1,7 +1,9 @@
+import Cart from "./img/Cart.svg";
 function CartWidget(){
     return (
         <div>
-            <a><img></img><span>3</span></a>
+            <img src={Cart}/>
+            <span>0</span>
         </div>
     )
 }
