@@ -1,0 +1,32 @@
+
+.control{
+    display: flex;
+}
+.resta, .suma{
+    width: 50px;
+    height: 30px;
+    border-radius:20px;
+    border-color: white;
+    background-color: orangered;
+    cursor: pointer;
+
+}
+.resta:hover, .suma:hover{
+    background-color: white;
+    border-color:orangered;
+}
+.button1{
+    border-radius: 20px;
+    width:100px;
+    height: 40px;
+    margin: 10px;
+    padding: 5px;
+    background-color: orangered;
+    color: white;
+    border:1px solid white;
+}
+.button1:hover{
+    background-color: white;
+    color: orangered;
+   border :1px solid orangered;
+}

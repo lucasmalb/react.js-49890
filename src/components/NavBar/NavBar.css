@@ -1,25 +1,31 @@
-Nav{
-    
-    background-color: rgba(255, 73, 7, 0.587);
-    height: 40px;
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
 }
 .NavBar{
+    background-color: orangered;
+   
+}
+
+.NavBar div{
     display: flex;
     justify-content: space-between;
-    padding-block:7px ;
-}
-.NavBar h1{
-    font-weight: 600;
-    font-size: 20px;
-    padding-inline: 10px;
+
 }
 
-.NavBar input{
-    width: 350px;
-    height: 27px;
+.button button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
     border-radius: 20px;
-    
-
-   
-
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+    cursor: pointer;
+}
+.button button:hover{
+    background-color: orangered;
+    color:white;
 }
