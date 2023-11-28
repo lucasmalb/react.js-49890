@@ -4,8 +4,19 @@
     box-sizing: border-box;
 }
 .NavBar{
-    background-color: orangered;
+    background-color: orangered !important;
    
+}
+.market h1 {
+    font-size: 30px;
+    color: black;
+}
+.market input{
+    border-radius: 20px;
+    width: 400px;
+    height: 25px;
+
+    margin-block: 3px;
 }
 
 .NavBar div{
@@ -14,7 +25,14 @@
 
 }
 
+.button{
+    background-color: orangered !important;
+    border: 2px solid orangered;
+}
 .button button {
+    background-color: white;
+    color: orangered;
+    border:solid 2px orangered;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -24,8 +42,11 @@
     height: 40px;
     padding: 10px;
     cursor: pointer;
+    margin-block:5px;
+    padding-block:5px ;
 }
 .button button:hover{
     background-color: orangered;
     color:white;
+    border:solid 2px white;
 }

@@ -33,7 +33,8 @@ const products = [
             category: "Galletitas",
             img: "https://masonlineprod.vtexassets.com/arquivos/ids/165631-230-230?v=637835137429100000&width=230&height=230&aspect=true",
             stock: 45,
-            description: ""
+            description: "Bizcochos De Grasa Don Satur 200gr"
+            
         },
         {
             id: "5",
@@ -42,7 +43,7 @@ const products = [
             category: "Galletitas",
             img: "https://masonlineprod.vtexassets.com/arquivos/ids/282433-230-230?v=638191677926000000&width=230&height=230&aspect=true",
             stock: 17,
-            description: ""
+            description: "Galletitas Variedad Surtidas Terrabusi 390g"
         },
     ]
 

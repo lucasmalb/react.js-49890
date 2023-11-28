@@ -1,45 +1,58 @@
-/* Estilos para la tarjeta */
-.card-container {
+
+.contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%; /* Cambia según tus necesidades */
+}
+
+.card {
+  border: 1px solid orangered;
+  border-radius: 20px !important;
   width: 300px;
-  border: 1px solid #ccc;
+  height: 440px;
   margin: 10px;
-  padding: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 8px;
 }
 
-/* Estilos para la imagen del producto */
-.image {
-  width: 100%;
-  height: auto;
-  border-radius: 4px;
+.card div img {
+  width: 100%; /* Ajusta la imagen para llenar el ancho de la tarjeta */
+  height: auto; /* Mantiene la proporción de la imagen */
+  border-radius: 20px;
 }
 
-/* Estilos para el nombre del producto */
-h2 {
-  margin-top: 10px;
-  font-size: 1.2em;
-  color: #333;
+.card div h3 {
+  text-align: center;
+  color: black;
 }
 
-/* Estilos para el botón "Ver detalle" */
-button {
-  background-color: #3498db;
-  color: #fff;
-  padding: 8px 12px;
-  border: none;
-  border-radius: 4px;
+.card div p {
+  margin-inline: 5px;
+}
+
+.card div span {
+  margin-inline: 5px;
+}
+
+.card button {
+  width: 90%;
+  margin: 5px;
+  margin-inline: 14px;
+  padding: 3px;
+  background-color: orangered;
+  border-radius: 20px;
+  border: 2px solid white;
   cursor: pointer;
 }
 
-/* Estilos para la información adicional */
-section {
-  margin-top: 10px;
+.card button a {
+  color: white;
 }
 
-/* Estilos para el precio y el stock */
-p {
-  margin: 5px 0;
-  font-size: 0.9em;
-  color: #555;
+.card button:hover {
+  background-color: white;
+  border: 2px solid orangered;
+}
+
+.card button:hover a {
+  color: orangered;
 }
