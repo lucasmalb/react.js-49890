@@ -9,6 +9,7 @@ import { Cart } from "./components/Cart/Cart";
 import { CartProvider } from "./components/CartContext/CartContext";
 import { useEffect, useState } from "react";
 import Checkout from "./components/Checkout/Chekout";
+import CheckoutForm from "./components/ChekoutForm/CheckoutForm";
 function App() {
   const [itemList, settItemList] = useState([]);
   const itemCollectionRef = collection(db, "products")
@@ -40,7 +41,7 @@ function App() {
           <Route path="/category/:categoryId" element={<ItemListContainer greeting={'Productos por categoria'}/>}/>
           <Route path="/item/:itemId" element={<ItemDetailContainer/>}/>
           <Route path="/cart" element={<Cart/>}/>
-          <Route path="/chekout" element={<Checkout/>}/>
+          <Route path="/checkoutForm" element={<checkoutForm/>}/>
           <Route path="*" element={<h2>404 not found</h2>}/>
         </Routes>
         </CartProvider>
