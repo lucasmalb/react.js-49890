@@ -1,10 +1,10 @@
 import { useState, useEffect } from "react";
 import { getDocs, collection, query, where } from "firebase/firestore";
 import { db } from "../../config/Firebase";
-
+import ItemList from "../ItemList/ItemList"
 import { useParams } from "react-router-dom";
 
-const itemListContainer = ({greeting})=> {
+const ItemListContainer = ({greeting})=> {
   const [products, setProducts] = useState ([]);
   const {categoryId} = useParams ()
   useEffect(() =>{
@@ -23,9 +23,9 @@ const itemListContainer = ({greeting})=> {
     <div>
       <h1>{greeting}</h1>
       <section>
-        <itemList products = {products}/>
+        <ItemList products = {products}/>
       </section>
     </div>
   )
 }
-export default itemListContainer;
+export default ItemListContainer;

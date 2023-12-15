@@ -22,7 +22,7 @@ export const CartProvider = ({children})=>{
                 setCart([])
             }
             const totalPrice = ()=>{
-                return cart.reduce((prev,act)=>pre + act.quantity * act.price, 0)
+                return cart.reduce((prev,act)=>prev + act.quantity * act.price, 0)
             }
             const totalQuantity=()=>cart.reduce((acumulador, itemsActual)=> acumulador + itemsActual.quantity, 0)
             const isInCart = (itemId) =>{
