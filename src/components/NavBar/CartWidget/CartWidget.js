@@ -8,7 +8,7 @@ function CartWidget(){
     const {totalQuantity} = useContext(CartContext)
     return (
         <div>
-            <Link to="/cart" style={{display:totalQuantity > 0 ? 'block' : 'none'}}>
+            <Link to="/cart" style={{display:totalQuantity > 0 }}>
             <img src={Cart} alt="logo"/>
             {totalQuantity}
             </Link>

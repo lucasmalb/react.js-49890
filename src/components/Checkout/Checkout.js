@@ -1,7 +1,7 @@
 import { useContext, useState } from "react";
+import { CartContext } from "../CartContext/CartContext";
 import { db } from "../../config/Firebase";
 import CheckoutForm from "../ChekoutForm/CheckoutForm";
-import { CartContext } from "../CartContext/CartContext";
 import { Timestamp, collection, writeBatch, getDocs, query, where, documentId, addDoc } from "firebase/firestore";
 
 const Checkout = () => {
@@ -12,11 +12,9 @@ const Checkout = () => {
     const createOrder = async ({ name, phone, email }) => {
         setLoading(true);
         try {
-            const orderObj = {
+            const objOrder = {
                 buyer: {
-                    name,
-                    phone,
-                    email,
+                    name, phone, email,
                 },
                 items: cart,
                 total: total,
@@ -46,7 +44,7 @@ const Checkout = () => {
             if (outOfStock.length === 0) {
                 await batch.commit();
                 const orderRef = collection(db, 'orders');
-                const orderAdded = await addDoc(orderRef, orderObj);
+                const orderAdded = await addDoc(orderRef, objOrder);
                 setOrderId(orderAdded.id);
                 clearCart();
             } else {

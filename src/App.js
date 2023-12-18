@@ -8,7 +8,7 @@ import { db } from "./config/Firebase";
 import { Cart } from "./components/Cart/Cart";
 import { CartProvider } from "./components/CartContext/CartContext";
 import { useEffect, useState } from "react";
-import Checkout from "./components/Checkout/Chekout";
+import Checkout from "./components/Checkout/Checkout";
 import CheckoutForm from "./components/ChekoutForm/CheckoutForm";
 function App() {
   const [itemList, settItemList] = useState([]);
@@ -41,7 +41,7 @@ function App() {
           <Route path="/category/:categoryId" element={<ItemListContainer greeting={'Productos por categoria'}/>}/>
           <Route path="/item/:itemId" element={<ItemDetailContainer/>}/>
           <Route path="/cart" element={<Cart/>}/>
-          <Route path="/checkoutForm" element={<checkoutForm/>}/>
+          <Route path="/checkout" element={<Checkout/>}/>
           <Route path="*" element={<h2>404 not found</h2>}/>
         </Routes>
         </CartProvider>
