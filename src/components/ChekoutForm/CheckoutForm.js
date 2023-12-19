@@ -26,7 +26,7 @@ const CheckoutForm = ({onConfirm})=>{
                 </label>
                 <label className="lbel">Email
                     <input className="input" type="text" value={email} onChange={({target})=> setEmail(target.value)}/>
-                    
+                    <button type="submit">Confirmar compra</button>
                 </label>
             </form>
         </div>

@@ -45,8 +45,6 @@ function App() {
           <Route path="*" element={<h2>404 not found</h2>}/>
         </Routes>
         </CartProvider>
-
-
       </BrowserRouter>
     </div>
 

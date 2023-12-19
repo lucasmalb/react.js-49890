@@ -7,7 +7,7 @@ import { Timestamp, collection, writeBatch, getDocs, query, where, documentId, a
 const Checkout = () => {
     const [loading, setLoading] = useState(false);
     const [orderId, setOrderId] = useState('');
-    const [cart, total, clearCart] = useContext(CartContext);
+    const {cart, totalQuantity, clearCart} = useContext(CartContext);
 
     const createOrder = async ({ name, phone, email }) => {
         setLoading(true);
@@ -17,7 +17,7 @@ const Checkout = () => {
                     name, phone, email,
                 },
                 items: cart,
-                total: total,
+                total: totalQuantity,
                 date: Timestamp.fromDate(new Date()),
             };
 
