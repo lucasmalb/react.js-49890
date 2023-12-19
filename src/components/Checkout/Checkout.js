@@ -17,7 +17,7 @@ const Checkout = () => {
                     name, phone, email,
                 },
                 items: cart,
-                total: totalQuantity,
+                total: totalQuantity(),
                 date: Timestamp.fromDate(new Date()),
             };
 
@@ -44,6 +44,7 @@ const Checkout = () => {
             if (outOfStock.length === 0) {
                 await batch.commit();
                 const orderRef = collection(db, 'orders');
+                
                 const orderAdded = await addDoc(orderRef, objOrder);
                 setOrderId(orderAdded.id);
                 clearCart();
@@ -63,13 +64,13 @@ const Checkout = () => {
     }
 
     if (orderId) {
-        return <h1>El ID de su orden es: {orderId}</h1>;
+        return <h1>El ID de su orden es:{orderId}</h1>;
     }
 
     return (
         <div>
             <h1>Checkout</h1>
-            <CheckoutForm onConfirm={createOrder} />
+            <CheckoutForm onConfirm={createOrder}/>
         </div>
     );
 }

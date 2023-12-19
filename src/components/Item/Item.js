@@ -9,11 +9,11 @@ const Item = ({ id, name, img, price, stock }) => {
         <h2>{name}</h2>
         <p>Stock {stock}</p>
         <p>Precio ${price}</p>
-        <button>
+        
           <Link to={`/item/${id}`} className="text">
             Ver detalle
           </Link>
-        </button>
+        
       </div>
     </div>
 
