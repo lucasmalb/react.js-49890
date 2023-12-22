@@ -17,7 +17,7 @@ const Checkout = () => {
                     name, phone, email,
                 },
                 items: cart,
-                total: totalQuantity(),
+                total: totalQuantity,
                 date: Timestamp.fromDate(new Date()),
             };
 
@@ -69,7 +69,7 @@ const Checkout = () => {
 
     return (
         <div>
-            <h1>Checkout</h1>
+            <h1>Complete sus datos</h1>
             <CheckoutForm onConfirm={createOrder}/>
         </div>
     );

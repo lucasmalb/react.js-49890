@@ -4,7 +4,7 @@ import CartItem from "../CartItem/CartItem";
 import { Link } from "react-router-dom";
 import { useState, useEffect } from "react";
 export const Cart =()=>{
-    const {cart, clearCart, totalQuantity, totalPrice} = useContext(CartContext)
+    const {cart,  totalQuantity, totalPrice} = useContext(CartContext)
     const [total, setTotal] = useState (0);
     useEffect(() => {
       setTotal(totalPrice());  
@@ -25,8 +25,7 @@ export const Cart =()=>{
             {
                 cart.map(p=> <CartItem key={p.id} {...p}/>) }
                 <h3>Total:${total}</h3>
-                <button onClick={() => clearCart()} className="">Limpiar carrito</button>
-                <Link to='/checkout'>chekout</Link>
+                <Link to='/checkout'>siguiente</Link>
         </div>
     )
 }

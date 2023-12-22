@@ -27,7 +27,7 @@ function App() {
   return (
     <div>
       {itemList.map((item)=>(
-        <div>
+        <div key={item.id}>
           <h2>{item.nombre}</h2>
           <h3>{item.precio}</h3>
           <h4>{item.cantidad}</h4>

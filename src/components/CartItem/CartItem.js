@@ -2,7 +2,8 @@ import { useContext } from "react"
 import { CartContext } from "../../components/CartContext/CartContext"
 import "./CartItem.css";
 
-const CartItem = ({ title, price, id,img, quantity }) => {
+
+const CartItem = ({ name, price, id, img , quantity }) => {
 
   const { removeItem, } = useContext(CartContext)
   
@@ -10,8 +11,8 @@ const CartItem = ({ title, price, id,img, quantity }) => {
   return (
     <div className="CartItem">
 
-      <h2 >{title}</h2>
-      <img src={img} alt={title}/>
+      <h2 >{name}</h2>
+      <img src={img} alt={name}/>
       <p>Cantidad:{quantity}</p>
       <p>Subtotal:{price * quantity}</p>
     

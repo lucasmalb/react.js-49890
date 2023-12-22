@@ -1,4 +1,4 @@
-import Cart from "./img/Cart.svg";
+import Carr from "./img/Carr.svg";
 import { useContext } from "react";
 import { CartContext } from "../../CartContext/CartContext";
 import { Link } from "react-router-dom";
@@ -11,8 +11,8 @@ function CartWidget() {
     return (
       <div>
         <Link to="/cart" style={{ display: totalQuantity.totalQuantity > 0 }}>
-          <img src={Cart} alt="logo" />
-          {totalQuantity.totalQuantity > 0 && <span>{totalQuantity.totalQuantity}</span>}
+          <img src={Carr} alt="logo"/>
+          {totalQuantity.totalQuantity> 0 && <span>{totalQuantity.totalQuantity}</span>}
         </Link>
       </div>
     );
