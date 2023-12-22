@@ -41,9 +41,9 @@ const Checkout = () => {
                 }
             });
 
-            if (outOfStock.length === 0) {
+            if (outOfStock.length === 0){
                 await batch.commit();
-                const orderRef = collection(db, 'orders');
+                const orderRef = collection(db,'orders');
                 
                 const orderAdded = await addDoc(orderRef, objOrder);
                 setOrderId(orderAdded.id);

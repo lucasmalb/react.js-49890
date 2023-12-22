@@ -1,8 +1,8 @@
-.esEste{
+.esEste {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  width: 100%; /* Cambia según tus necesidades */
+  width: 100%;
 }
 
 .card {
@@ -11,11 +11,14 @@
   width: 300px;
   height: 440px;
   margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .card div img {
-  width: 100%; /* Ajusta la imagen para llenar el ancho de la tarjeta */
-  height: auto; /* Mantiene la proporción de la imagen */
+  width: 100%;
+  height: auto;
   border-radius: 20px;
 }
 
@@ -32,26 +35,23 @@
   margin-inline: 5px;
 }
 
-.card button {
-  width: 90%;
-  margin: 5px;
-  margin-inline: 14px;
-  padding: 3px;
-  background-color: orangered;
-  border-radius: 20px;
-  border: 2px solid white;
-  cursor: pointer;
-}
-
-.card button a {
+.item-link {
+  width: 80%;
+  height: 40px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  background-color: #ff4500;
   color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  margin: 20px;
+  padding: 5px;
 }
 
-.card button:hover {
-  background-color: white;
-  border: 2px solid orangered;
-}
-
-.card button:hover a {
-  color: orangered;
+.item-link:hover {
+  background-color: #ff6347;
 }

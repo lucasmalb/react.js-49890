@@ -8,7 +8,7 @@ export const Cart =()=>{
     const [total, setTotal] = useState (0);
     useEffect(() => {
       setTotal(totalPrice());  
-    });
+    },[totalPrice]);
     if (totalQuantity === 0){
         return(
             <div>

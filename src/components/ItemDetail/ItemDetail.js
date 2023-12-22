@@ -26,7 +26,7 @@ const ItemDetail= ({id, name, img, description, price, category, stock}) => {
             {
                 quantityAdded > 0 ?(
                     <Link to='/Cart' className= 'Option' > terminar compra</Link>
-                    ): (
+                    ) : (
                         <ItemCount initial={1} stock={10} onAdd={handleOnAdd}/>
                     )
             }
