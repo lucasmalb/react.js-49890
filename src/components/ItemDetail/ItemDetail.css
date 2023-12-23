@@ -24,3 +24,15 @@
 .contenido div, .contenido p, .contenido strong {
     margin-bottom: 10px; /* Espacio entre cada elemento del contenido */
 }
+
+.terminar {
+    width: 300px;
+    height: 300px;
+    border-radius: 20px;
+    border: 2px solid orangered;
+    background-color: white;
+    color: orangered;
+    cursor: pointer;
+    padding: 12px;
+}
+

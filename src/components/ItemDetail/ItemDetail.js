@@ -20,21 +20,18 @@ const ItemDetail= ({id, name, img, description, price, category, stock}) => {
             <img src={img} alt={name}/>
             </div>
             <div className="contenido">
-            <p><strong>precio:</strong>{price}</p>
-            <p><strong>categoria:</strong>{category}</p>
-            <p><strong>descripcion:</strong>{description}</p>
+            <p><strong>precio: </strong>${price}</p>
+            <p><strong>categoria: </strong>{category}</p>
+            <p className="descripcionProd"><strong>descripcion: </strong>{description}</p>
             {
                 quantityAdded > 0 ?(
-                    <Link to='/Cart' className= 'Option' > terminar compra</Link>
+                    <Link to='/Cart' className= 'terminar' > terminar compra</Link>
                     ) : (
                         <ItemCount initial={1} stock={10} onAdd={handleOnAdd}/>
                     )
             }
             </div>
-            
-            
         </div>
-       
     )
 }
 export default ItemDetail;

@@ -9,16 +9,16 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .formulario2 {
-    position: absolute;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    margin-top: 100px;
     width: 400px;
     height: 390px;
     background: white;
     border-radius: 20px;
+    border: 2px solid orangered;
 }
 
 .formulario .formulario2 h1 {
@@ -93,3 +93,4 @@ input[type="submit"] {
     cursor: pointer;
     outline: none;
 }
+

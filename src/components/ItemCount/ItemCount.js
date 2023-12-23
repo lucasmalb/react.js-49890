@@ -17,7 +17,7 @@ const ItemCount= ({stock,initial, onAdd})=>{
         <div className="contenedor">
             <div className="control">
                 <button className="resta" onClick={decrement}>-</button>
-                <h4 className="Number">{quantity}</h4>
+                <h4 className="number">{quantity}</h4>
                 <button className="suma" onClick={increment}>+</button>
             </div>
             <div>

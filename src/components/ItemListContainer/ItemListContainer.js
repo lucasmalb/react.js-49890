@@ -21,7 +21,7 @@ const ItemListContainer = ({greeting})=> {
   },[categoryId])
   return(
     <div>
-      <h1>{greeting}</h1>
+      <h1 className="productosIntro">{greeting}</h1>
       <section>
         <ItemList products = {products}/>
       </section>

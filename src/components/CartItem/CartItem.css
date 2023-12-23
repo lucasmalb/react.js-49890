@@ -8,8 +8,10 @@
     border-radius: 10px;
 }
 
-.CartItem h2 {
-    margin: 0;
+.productoFin {
+    font-size: 25px;
+    font-weight: 800;
+    color: black;
 }
 
 .CartItem img {
@@ -20,6 +22,8 @@
 
 .CartItem p {
     margin: 5px 0;
+    font-size: 15px;
+    font-weight: 600;
 }
 
 .CartItem button {
@@ -36,4 +40,19 @@
 
 .CartItem button:hover {
     background-color: #ff6347;
+}
+
+/* clases CART */ 
+
+.totalProd {
+    font-weight:800;
+    font-size: 20px;
+    text-align: center;
+}
+
+span {
+    color: black;
+    font-weight: 900;
+    font-size: 16px;
+    margin: 5px;
 }

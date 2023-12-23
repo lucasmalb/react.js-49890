@@ -69,7 +69,7 @@ const Checkout = () => {
 
     return (
         <div>
-            <h1>Complete sus datos</h1>
+            <h1 className="productosIntro">Complete sus datos</h1>
             <CheckoutForm onConfirm={createOrder}/>
         </div>
     );

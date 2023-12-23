@@ -6,8 +6,8 @@ const Item = ({ id, name, img, price }) => {
     <div className="contenedor">
       <div className="card is-4">
         <img src={img} alt={`product${name}`} className="image" />
-        <h2>{name}</h2>
-        <p>Precio ${price}</p>
+        <h2 className="nombreProducto">{name}</h2>
+        <p className="precioProducto">Precio: ${price}</p>
         
           <Link to={`/item/${id}`} className="item-link">
             Ver detalle

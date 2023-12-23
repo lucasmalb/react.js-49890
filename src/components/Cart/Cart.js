@@ -24,8 +24,8 @@ export const Cart =()=>{
         <div>
             {
                 cart.map(p=> <CartItem key={p.id} {...p}/>) }
-                <h3>Total:${total}</h3>
-                <Link to='/checkout'>siguiente</Link>
+                <h3 className="totalProd">Total: ${total}</h3>
+                <Link className="totalProd" to='/checkout'> siguiente</Link>
         </div>
     )
 }

@@ -33,7 +33,7 @@ const CheckoutForm = ({ onConfirm }) => {
                     <input type="text" value={email} onChange={({ target }) => setEmail(target.value)} />
                     <label>Email</label>
                 </div>
-                <input type="submit" value="Crear compra" />                
+                <input type="submit" value="Crear compra"/>                
             </form>
             </div>
         </div>
